@@ -1,4 +1,6 @@
-package com.arkvis.synth;
+package com.arkvis.synth.clock;
+
+import com.arkvis.synth.Component;
 
 import java.util.ArrayList;
 import java.util.List;

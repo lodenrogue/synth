@@ -1,4 +1,6 @@
-package com.arkvis.synth;
+package com.arkvis.synth.oscillator;
+
+import com.arkvis.synth.SynthInput;
 
 import java.util.ArrayList;
 import java.util.List;

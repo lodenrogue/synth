@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DefaultGain implements Gain {
-
     private final List<SynthInput> listeners;
     private double level;
     private double value;

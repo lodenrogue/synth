@@ -1,7 +1,12 @@
 package com.arkvis.synth;
 
+import com.arkvis.synth.clock.DefaultClock;
+import com.arkvis.synth.clock.SynthClock;
 import com.arkvis.synth.gain.DefaultGain;
 import com.arkvis.synth.gain.Gain;
+import com.arkvis.synth.oscillator.Oscillator;
+import com.arkvis.synth.oscillator.SineWaveOscillator;
+import com.arkvis.synth.speaker.DefaultSpeaker;
 
 class SoundTest {
 

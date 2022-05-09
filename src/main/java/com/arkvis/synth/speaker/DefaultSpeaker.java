@@ -1,4 +1,4 @@
-package com.arkvis.synth;
+package com.arkvis.synth.speaker;
 
 import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;

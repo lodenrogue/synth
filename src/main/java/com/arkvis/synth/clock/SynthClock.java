@@ -1,5 +1,7 @@
-package com.arkvis.synth;
+package com.arkvis.synth.clock;
 
+
+import com.arkvis.synth.Component;
 
 public interface SynthClock {
 
