@@ -14,12 +14,7 @@ public class DefaultSpeaker implements Speaker {
 
     @Override
     public void feed(double value) {
-        sum += value * .2;
-        if (sum > 0) {
-            sum = Math.min(sum, 127);
-        } else {
-            sum = Math.max(sum, -127);
-        }
+        sum += value;
     }
 
     @Override
