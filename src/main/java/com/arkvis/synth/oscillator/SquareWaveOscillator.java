@@ -5,13 +5,13 @@ import com.arkvis.synth.SynthInput;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SineWaveOscillator implements Oscillator {
+public class SquareWaveOscillator implements Oscillator {
     private final int sampleRate;
     private final double frequency;
     private final List<SynthInput> inputListeners;
     private int time;
 
-    public SineWaveOscillator(int sampleRate, double frequency) {
+    public SquareWaveOscillator(int sampleRate, int frequency) {
         this.sampleRate = sampleRate;
         this.frequency = frequency;
         this.inputListeners = new ArrayList<>();
@@ -33,6 +33,7 @@ public class SineWaveOscillator implements Oscillator {
     }
 
     private double calculateSineValue(int time) {
-        return new SineWave(sampleRate, frequency).calculateSineValue(time);
+        double point = new SineWave(sampleRate, frequency).calculateSineValue(time);
+        return point >= 0 ? SineWave.MAX_VALUE : -SineWave.MAX_VALUE;
     }
 }

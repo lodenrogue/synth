@@ -7,6 +7,7 @@ import com.arkvis.synth.gain.Gain;
 import com.arkvis.synth.oscillator.Oscillator;
 import com.arkvis.synth.oscillator.SineWaveOscillator;
 import com.arkvis.synth.speaker.DefaultSpeaker;
+import com.arkvis.synth.speaker.Speaker;
 
 class SoundTest {
 
@@ -30,7 +31,7 @@ class SoundTest {
         Oscillator oscillator4 = new SineWaveOscillator(sampleRate, 493);
         oscillator4.addListener(gain4);
 
-        SynthInput speaker = new DefaultSpeaker(sampleRate);
+        Speaker speaker = new DefaultSpeaker(sampleRate);
         gain1.addListener(speaker);
         gain2.addListener(speaker);
         gain3.addListener(speaker);
